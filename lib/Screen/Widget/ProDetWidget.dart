@@ -21,6 +21,7 @@ Widget ProDetShape1({required BuildContext context, required Product modell}) {
                 image: NetworkImage(
                   modell.images![index],
                 ),
+                fit: BoxFit.scaleDown,
               ),
               itemCount: 3,
               onPageChanged: (index) => HomeCubit.get(context).chCurr(index),
